@@ -5,6 +5,9 @@
         <title>Shifumi</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
 
@@ -15,21 +18,27 @@
         </div>
     </header>
     
-    <div class="container">
+    <div class="container font">
         <div class="you">          
             <p></p><h1>YOU</h1></p>
             <div class="joueur"><img src="img/joueur.jpg"></div>
-            <button onClick="display(1)">Pierre</button>
-            <button onClick="display(2)">Leaf</button>
-            <button onClick="display(3)">Scissors</button>
-            <img id="image" />
+            <div>
+            <button onClick="onButtonClickPierre()" class="font">Pierre</button>
+            <button onClick="onButtonClickFeuille()"class="font">Leaf</button>
+            <button onClick="onButtonClickCiseaux()"class="font">Scissors</button>
+            </div>
         </div>
-    
         <div class="ia">
             <p><h1>IA</h1></p>
             <div class="intel"><img src="img/IA-.jpg"></div>
         </div>
+
     </div>
+    <div class="images_match"> 
+        <div><img id="image_joueur" class="img1"/></div>
+        <div><img id="imageIA" class="img2"/></div>
+    </div>
+    <div class="résultat font" id="result">Résultat</div>
     
     </div>   
         <script src="index.js"></script>
