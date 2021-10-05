@@ -11,38 +11,41 @@
         <link rel="stylesheet" href="styles.css">
     </head>
 
-<body>
-    <header>
-        <div class="title">
-          <div><h1>Shifumi</h1></div>
-        </div>
-    </header>
-    
-    <div class="container font">
-        <div class="you">          
-            <p></p><h1>YOU</h1></p>
-            <div class="joueur"><img src="img/joueur.jpg"></div>
-            <div>
-            <button onClick="onButtonClickPierre()" class="font">Pierre</button>
-            <button onClick="onButtonClickFeuille()"class="font">Leaf</button>
-            <button onClick="onButtonClickCiseaux()"class="font">Scissors</button>
+    <body>
+        <header>
+            <div class="title">
+            <div><h1>Shifumi</h1></div>
+            </div>
+        </header>
+        
+        <div class="container font">
+            <div class="you">          
+                <p></p><h1>YOU</h1></p>
+                <div class="joueur"><img src="img/joueur.jpg"></div>
+                <div>
+                <button onClick="onButtonClickPierre()" class="font">Pierre</button>
+                <button onClick="onButtonClickFeuille()"class="font">Leaf</button>
+                <button onClick="onButtonClickCiseaux()"class="font">Scissors</button>
+                </div>
+            </div>
+            <div class="ia">
+                <p><h1>IA</h1></p>
+                <div class="intel"><img src="img/IA-.jpg"></div>
             </div>
         </div>
-        <div class="ia">
-            <p><h1>IA</h1></p>
-            <div class="intel"><img src="img/IA-.jpg"></div>
+        
+        <div class="images_match"> 
+            <div><img id="image_joueur" class="img1"/></div>
+            <div><img id="imageIA" class="img2"/></div>
         </div>
-
-    </div>
-    <div class="images_match"> 
-        <div><img id="image_joueur" class="img1"/></div>
-        <div><img id="imageIA" class="img2"/></div>
-    </div>
-    <div class="résultat font" id="result">Résultat</div>
-    
-    </div>   
+        
+        <div class="résultat font" id="result">Résultat</div>
+        
+        <div class="résultat font" id="final_score">...</div>
+        
         <script src="index.js"></script>
-</body>
+
+    </body>
 
 </html>
 

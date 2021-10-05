@@ -20,13 +20,15 @@ function onButtonClickPierre() {
     var ia = random()
     display(ia)
     
-    if(ia === 1){
+    if(ia === 1) {
         result.innerHTML = "Egalite"
     
-    } else if(ia === 2){
+    } else if(ia === 2) {
+        scoreIa +=
         result.innerHTML = "L'IA a gagné"
     
     } else {
+        scoreJoueur +=
         result.innerHTML = "Vous avez gagné"
     }
 }
@@ -39,13 +41,16 @@ function onButtonClickFeuille() {
     picture.setAttribute("src", "img/2-feuille.jpg")
     var ia = random()
     display(ia)
-    if(ia === 2){
+    
+    if(ia === 2) {
         result.innerHTML = "Egalite"
     
-    } else if(ia === 3){
+    } else if(ia === 3) {
+        scoreIa +=
         result.innerHTML = "L'IA a gagné"
     
     } else {
+        scoreJoueur +=
         result.innerHTML = "Vous avez gagné"
     }
 }
@@ -63,9 +68,11 @@ function onButtonClickCiseaux() {
         result.innerHTML = "Egalite"
     
     } else if(ia === 1) {
+        scoreIa +=
         result.innerHTML = "L'IA a gagnée"
     
     } else {
+        scoreJoueur+=
         result.innerHTML = "Vous avez gagné"
     }
 
@@ -90,18 +97,21 @@ function display(joueur) {
 
 //--------------Score--------------
 
-function score(){
+var scoreJoueur = 0
+var scoreIa = 0
     
-    for(var i = 0; i < 4; i++){
-        if(joueur > ia) {
-            result.innerHTML = "L'IA gagne la partie !"
-        }else if(joueur < ia) {
-            result.innerHTML = "Vous avez gagné la partie !"
-        }else{
-            result.innerHTML = "Match nul !"
+    for(var i = 0; i < 4; i++) {
+        
+        if(scoreJoueur > scoreIa) {
+            final_score.innerHTML = "L'IA gagne la partie !"
+        } else if(scoreJoueur < scoreIa) {
+            final_score.innerHTML = "Vous avez gagné la partie !"
+        } else { 
+            final_score.innerHTML = "Match nul !"
         }
-    }
-}
+    } 
+    console.log(final_score)
+        
 
 
 //--------------Animation--------------
