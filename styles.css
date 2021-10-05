@@ -1,0 +1,34 @@
+header{
+    background: black;
+    color: white;
+    padding-top: 60px ;
+}
+
+.title{
+    text-align: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.container{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.you{
+    width: 50%;
+    text-align: center;
+}
+
+.ia{
+    width: 50%;
+    text-align: center;
+}
+
+.intel{
+    width: 40%;
+}
