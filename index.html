@@ -8,8 +8,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="styles.css">
     </head>
+
+
 
     <body>
         <header>
@@ -22,10 +25,10 @@
             <div class="you">          
                 <p></p><h1>YOU</h1></p>
                 <div class="joueur"><img src="img/joueur.jpg"></div>
-                <div>
-                <button onClick="onButtonClickPierre()" class="font">Pierre</button>
-                <button onClick="onButtonClickFeuille()"class="font">Leaf</button>
-                <button onClick="onButtonClickCiseaux()"class="font">Scissors</button>
+                <div class="button-container">
+                <button onClick="onButtonClickPierre()" class="font button">Pierre</button>
+                <button onClick="onButtonClickFeuille()"class="font button">Leaf</button>
+                <button onClick="onButtonClickCiseaux()"class="font button">Scissors</button>
                 </div>
             </div>
             <div class="ia">
@@ -41,8 +44,10 @@
         
         <div class="résultat font" id="result">Résultat</div>
         
-        <div class="résultat font" id="final_score">...</div>
+        <div class="résultat font" id="final_score"></div>
         
+        <div class="score_tableau"></div>
+
         <script src="index.js"></script>
 
     </body>

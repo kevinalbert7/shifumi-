@@ -119,3 +119,16 @@ var scoreIa = 0
 var myvar = setInterval(imageIA, 50)
 setTimeout(function () {
 clearInterval(myvar)} , 1000)
+
+
+var myVar =  (imageIA, 1000);
+
+function myTimer() {
+  var d = new Date();
+  var t = d.toLocaleTimeString();
+  document.getElementById("src", "img/3-ciseaux.jpg").innerHTML = t;
+}
+
+function myStopFunction() {
+  clearInterval(myVar);
+}

@@ -43,6 +43,14 @@ body{
     text-align: center;
 }
 
+.button-container{
+    padding-right: 19px;
+}
+
+.button{
+    padding: 15px 20px;
+}
+
 .ia{
     width: 50%;
     text-align: center;
@@ -62,11 +70,13 @@ body{
 .img2{
     margin-left: 20px;
 }
-/* .intel{
-    display: flex;
-    align-items: flex-end;
-    width: 40%;
-} */
+
+.score_tableau{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: 6 px solid grey;
+}
 
 .résultat{
     height: 100px;
